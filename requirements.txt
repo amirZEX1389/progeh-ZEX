@@ -1,2 +1,5 @@
 aiogram
 flask
+pyTelegramBotAPI
+aiohttp
+
