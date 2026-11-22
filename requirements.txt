@@ -1,5 +1,3 @@
-aiogram
-flask
 pyTelegramBotAPI
-aiohttp
-
+flask
+gunicorn
