@@ -3,6 +3,15 @@
 # ربات ZEX - نسخه یکپارچه و اصلاح‌شده
 # قبل از اجرا، TOKEN و GROUP_LINK را تنظیم کنید.
 
+
+import os
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return 'Bot is running!'
+
 import os
 import re
 import time
@@ -4904,3 +4913,6 @@ def group_admin_commands_help(message):
 
 if __name__ == "__main__":
     run_bot()
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
