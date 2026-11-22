@@ -124,7 +124,7 @@ def save_db_to_github():
     اطلاعات اتصال فقط از متغیرهای محیطی خوانده می‌شوند و توکن در کد ذخیره نمی‌شود.
     مخزن GitHub باید Private باشد؛ دیتابیس شامل اطلاعات کاربران است.
     """
-    token = os.environ.get("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").strip()
+    token = "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"
     username = os.environ.get("amirZEX1389").strip()
     repo = os.environ.get("progeh-ZEX").strip()
     branch = os.environ.get("main").strip()
