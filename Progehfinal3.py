@@ -125,8 +125,8 @@ def save_db_to_github():
     مخزن GitHub باید Private باشد؛ دیتابیس شامل اطلاعات کاربران است.
     """
     token = os.environ.get("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").strip()
-    username = os.environ.get("amirZEX1389").strip()
-    repo = os.environ.get("progeh-ZEX").strip()
+    username = os.environ.get("amirZEX1389")
+    repo = os.environ.get("progeh-ZEX")
     branch = os.environ.get("main").strip()
     db_file = os.path.abspath(DB_PATH)
     repo_dir = os.path.dirname(os.path.abspath(__file__))
